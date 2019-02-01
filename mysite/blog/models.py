@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 # Create your models here.
 
 
@@ -36,6 +37,15 @@ class Post(models.Model):
 
     class Meta:                                           # Metadata about the class
         ordering = ('-publish',)                          # How to order the results (by results in descending order)
+
+    def get_absolute_url(self):
+        return reverse("blog:post_detail",                # Allows constructing URLs by their name and optional parameters
+                       args=[
+                           self.publish.year,
+                           self.publish.month,
+                           self.publish.day,
+                           self.slug
+                       ])
 
     def __str__(self):                                    # Human-readable format of object, used by admin site
         return self.title
