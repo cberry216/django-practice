@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # New apps go at the top
+    'pages.apps.PagesConfig',
+    # Built-in apps go below
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
