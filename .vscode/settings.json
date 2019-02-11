@@ -1,3 +1,10 @@
 {
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": false,
+  "python.unitTest.promptToConfigure": false,
+  "python.unitTest.pyTestEnabled": false,
+  "python.unitTest.unittestEnabled": false,
+  "python.unitTest.nosetestsEnabled": false,
+  "python.pythonPath": "/Users/christopherberry/.local/share/virtualenvs/django-practice-bTQFlu7n/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pep8Enabled": true
 }
