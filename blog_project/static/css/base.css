@@ -5,6 +5,21 @@ body {
 
 header {
 	background-color: #e0e0e0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.nav-left {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.nav-right {
+	text-align: right;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
 }
 
 h1 {
@@ -16,10 +31,18 @@ header h1 a {
 	text-decoration: none;
 }
 
-body h2 a {
+body h2 a,
+.nav-right a {
 	color: red;
 	text-decoration: none;
 }
-body h2 a:hover {
+body h2 a:hover,
+.nav-right:hover {
+	color: red;
 	text-decoration: underline;
+}
+
+.nav-right a {
+	margin-top: 10px;
+	margin-right: 10px;
 }
