@@ -1,0 +1,24 @@
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+#content {
+	width: 65%;
+	margin: 0 3% 0 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 30%;
+	padding: 0 0 0 5px;
+	background-color: salmon;
+
+	display: flex;
+	flex-direction: column;
+}
