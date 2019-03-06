@@ -10,7 +10,7 @@ autopep8 = "*"
 [packages]
 django = "*"
 django-crispy-forms = "==1.7.2"
-django-taggit = "==0.22.2"
+django-taggit = "==0.23.0"
 
 [requires]
 python_version = "3.7"
