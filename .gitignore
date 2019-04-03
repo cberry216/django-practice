@@ -1,6 +1,9 @@
 # Django
 *.sqlite*
 
+# Python
+__pycache__
+
 # VS Code
 .dist
 .vscode
