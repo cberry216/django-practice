@@ -5,16 +5,17 @@
 {% block content %}
 <h1>Login</h1>
 {% if form.errors %}
-  <p>Your username and password didn't match. Please try again.</p>
+<p>Your username and password didn't match. Please try again.</p>
 {% else %}
-  <p>Please use the following form to login:</p>
+<p>Please use the following form to login:</p>
 {% endif %}
-  <div class="login-form">
-    <form action="." method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <input type="hidden" name="next" value="{{ next }}">
-      <p><input type="submit" value="Login"></p>
-    </form>
-  </div>
+<div class="login-form">
+  <form action="." method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}">
+    <p><input type="submit" value="Login"></p>
+  </form>
+  <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
+</div>
 {% endblock content %}
