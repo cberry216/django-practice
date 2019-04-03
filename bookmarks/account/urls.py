@@ -13,7 +13,7 @@ from .views import (
     dashboard
 )
 
-app_name = 'account'
+# app_name = 'account'
 
 urlpatterns = [
     path('', dashboard, name='dashboard'),
