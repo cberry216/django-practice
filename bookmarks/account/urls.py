@@ -16,6 +16,7 @@ from django.contrib.auth.views import (
 from .views import (
     dashboard,
     register,
+    edit
 )
 
 # app_name = 'account'
@@ -24,5 +25,6 @@ urlpatterns = [
     path('', dashboard, name='dashboard'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('register/', register, name='register')
+    path('register/', register, name='register'),
+    path('edit/', edit, name='edit'),
 ]
