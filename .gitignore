@@ -1,5 +1,6 @@
 # Django
 *.sqlite*
+*/media/*
 
 # Python
 __pycache__
